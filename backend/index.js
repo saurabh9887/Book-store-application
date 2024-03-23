@@ -18,9 +18,9 @@ mongoose
     console.log("Connection successful!");
   })
   .catch(() => {
-    console.log("Something went wrong!");
+    console.log("Something went wrong in DB!");
   });
 
-app.listen(5000, () => {
+app.listen(5050, () => {
   console.log("Server is live");
 });
