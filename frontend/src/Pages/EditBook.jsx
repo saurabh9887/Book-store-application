@@ -39,7 +39,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`https://book-store-application-ithq.onrender.com/${id}`, data)
+      .put(`https://book-store-application-ithq.onrender.com/books/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Updated Successfully!", { variant: "success" });
