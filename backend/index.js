@@ -21,6 +21,8 @@ mongoose
     console.log("Something went wrong in DB!");
   });
 
-app.listen(5050, () => {
+const port = 5050 || process.env.PORT;
+
+app.listen(port, () => {
   console.log("Server is live");
 });
