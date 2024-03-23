@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://book-store-application-d7sy.onrender.com/books")
+      .get("https://book-store-application-ithq.onrender.com/books")
       .then((res) => {
         setBooks(res.data.data);
         setLoading(false);

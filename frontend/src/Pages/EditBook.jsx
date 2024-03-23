@@ -17,7 +17,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5000/books/${id}`)
+      .get(`https://book-store-application-ithq.onrender.com/books/${id}`)
       .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear);
@@ -39,7 +39,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`https://book-store-application-d7sy.onrender.com/${id}`, data)
+      .put(`https://book-store-application-ithq.onrender.com/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Updated Successfully!", { variant: "success" });
